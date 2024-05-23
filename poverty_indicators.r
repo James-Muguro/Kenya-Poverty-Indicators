@@ -1,7 +1,7 @@
 library(shiny)
 library(tidyverse)
 library(readxl)
-library(shinythemes) # This is necessary for the theming function
+library(shinythemes)
 
 # Load data
 pdata <- read.csv("Kenya_Poverty_Trends.csv")
@@ -12,7 +12,7 @@ ui <- fluidPage(
     titlePanel("Kenya Poverty Insights Dashboard"),
     sidebarLayout(
         sidebarPanel(
-            selectInput("region", "Select Region", choices = unique(pdata$region))
+            selectInput("region", "Select Region", choices = c("All Regions", unique(pdata$region)))
         ),
         mainPanel(
             tabsetPanel(
@@ -31,9 +31,10 @@ server <- function(input, output) {
     
     output$secondplot <- renderPlot({
         filtered_data <- pdata %>%
-            filter(region == input$region)
-        ggplot(filtered_data, aes(x = dimension, y = Value)) +
-            geom_col(fill = "steelblue") +
+            filter(region == input$region | input$region == "All Regions")
+        
+        ggplot(filtered_data, aes(x = dimension, y = Value, fill = region)) +
+            geom_col(position = "dodge") +
             labs(title = "Contribution of Dimensions to Poverty", 
                  x = "Dimension", 
                  y = "Contribution (%)") +
@@ -41,11 +42,18 @@ server <- function(input, output) {
     })
     
     output$table <- renderTable({
-        pdata %>%
-            filter(region == input$region) %>%
-            select(MPI) %>%
-            head(1) %>%
-            rename(`Multidimensional Poverty Index (MPI)` = MPI)
+        if (input$region == "All Regions") {
+            table_data <- pdata %>%
+                select(region, MPI) %>%
+                distinct()
+        } else {
+            table_data <- pdata %>%
+                filter(region == input$region) %>%
+                select(region, MPI)
+        }
+        
+        table_data %>%
+            rename(`Region` = region, `Multidimensional Poverty Index (MPI)` = MPI)
     })
     
     output$text <- renderText({
