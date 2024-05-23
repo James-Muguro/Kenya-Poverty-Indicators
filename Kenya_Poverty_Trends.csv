@@ -1,0 +1,81 @@
+region,dimension,Value,MPI
+Central,Nutrition,21.16,0.07
+Central,Child mortality,3.90,0.07
+Central,Years of schooling,9.44,0.07
+Central,School attendance,1.86,0.07
+Central,Cooking_fuel,13.30,0.07
+Central,Sanitation,12.21,0.07
+Central,Drinking water,7.19,0.07
+Central,Electricity,11.64,0.07
+Central,Housing,13.77,0.07
+Central,Assets,5.53,0.07
+Coast,Nutrition,21.18,0.21
+Coast,Child mortality,3.71,0.21
+Coast,Years of schooling,10.97,0.21
+Coast,School attendance,6.36,0.21
+Coast,Cooking_fuel,11.42,0.21
+Coast,Sanitation,10.17,0.21
+Coast,Drinking water,7.48,0.21
+Coast,Electricity,10.44,0.21
+Coast,Housing,11.64,0.21
+Coast,Assets,6.62,0.21
+Eastern,Nutrition,18.84,0.18
+Eastern,Child mortality,2.34,0.18
+Eastern,Years of schooling,9.80,0.18
+Eastern,School attendance,3.43,0.18
+Eastern,Cooking_fuel,12.41,0.18
+Eastern,Sanitation,10.86,0.18
+Eastern,Drinking water,10.37,0.18
+Eastern,Electricity,12.06,0.18
+Eastern,Housing,12.49,0.18
+Eastern,Assets,7.41,0.18
+Nairobi,Nutrition,30.50,0.03
+Nairobi,Child mortality,10.01,0.03
+Nairobi,Years of schooling,6.39,0.03
+Nairobi,School attendance,2.98,0.03
+Nairobi,Cooking_fuel,6.37,0.03
+Nairobi,Sanitation,12.88,0.03
+Nairobi,Drinking water,3.81,0.03
+Nairobi,Electricity,7.16,0.03
+Nairobi,Housing,13.75,0.03
+Nairobi,Assets,6.15,0.03
+North Eastern,Nutrition,11.09,0.48
+North Eastern,Child mortality,1.86,0.48
+North Eastern,Years of schooling,16.35,0.48
+North Eastern,School attendance,20.22,0.48
+North Eastern,Cooking_fuel,9.69,0.48
+North Eastern,Sanitation,8.53,0.48
+North Eastern,Drinking water,6.78,0.48
+North Eastern,Electricity,8.89,0.48
+North Eastern,Housing,9.68,0.48
+North Eastern,Assets,6.91,0.48
+Nyanza,Nutrition,19.51,0.17
+Nyanza,Child mortality,5.78,0.17
+Nyanza,Years of schooling,6.64,0.17
+Nyanza,School attendance,1.39,0.17
+Nyanza,Cooking_fuel,13.04,0.17
+Nyanza,Sanitation,11.25,0.17
+Nyanza,Drinking water,10.33,0.17
+Nyanza,Electricity,12.48,0.17
+Nyanza,Housing,13.06,0.17
+Nyanza,Assets,6.52,0.17
+Rift Valley,Nutrition,21.46,0.21
+Rift Valley,Child mortality,2.81,0.21
+Rift Valley,Years of schooling,9.99,0.21
+Rift Valley,School attendance,4.84,0.21
+Rift Valley,Cooking_fuel,11.87,0.21
+Rift Valley,Sanitation,10.38,0.21
+Rift Valley,Drinking water,8.96,0.21
+Rift Valley,Electricity,11.27,0.21
+Rift Valley,Housing,11.93,0.21
+Rift Valley,Assets,6.48,0.21
+Western,Nutrition,21.82,0.18
+Western,Child mortality,3.79,0.18
+Western,Years of schooling,7.10,0.18
+Western,School attendance,3.64,0.18
+Western,Cooking_fuel,12.71,0.18
+Western,Sanitation,12.01,0.18
+Western,Drinking water,8.19,0.18
+Western,Electricity,12.46,0.18
+Western,Housing,12.73,0.18
+Western,Assets,5.55,0.18
